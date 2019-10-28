@@ -1,0 +1,64 @@
+main div{
+	display: flex;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+#desc{
+	width: 616px; /*714-24-(16*2)*/
+	padding: 16px;
+	font-size: 20px;
+}
+
+#bio{
+	width: 284px; /*222-(8*2)*/
+	font-size: 20px;
+}
+
+#bio figure{
+	width: inherit;
+	height: 284px;
+	border-bottom: 2px solid;
+	font-size: 20px;
+}
+
+#bio figure img{ height: inherit; }
+
+#bio div{
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 960px){
+	main{
+		padding-bottom: 3vw;
+	}
+	main div{
+		display: initial;
+	}
+
+	#desc, #bio{
+		width: 100%;
+		font-size: 7vw;
+		box-sizing: border-box;
+	}
+
+	#desc h2, #bio h2{
+		font-size: 7vw;
+	}
+
+	#bio{
+		margin-top: 24px;
+	}
+
+	#bio figure{
+		height: initial;
+	}
+
+	#bio figure img{
+	 	width: 100%;
+		height: 100%;
+		margin-bottom: -4px;
+	}
+}
